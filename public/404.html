@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>404 - Oops!</title>
+    <link rel="stylesheet" href="css/bg-pattern.css">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #122750, #2174c6);
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        overflow: hidden;
+      }
+      #message {
+        text-align: center;
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        animation: popIn 0.8s ease-out;
+      }
+      h2 {
+        font-size: 80px;
+        color: #ff6b6b;
+        margin: 0;
+        animation: bounce 2s infinite;
+      }
+      h1 {
+        font-size: 24px;
+        margin: 20px 0;
+        color: #222;
+      }
+      p {
+        margin: 10px 0 20px;
+        line-height: 1.6;
+        font-size: 16px;
+      }
+      a {
+        display: inline-block;
+        background: #007bff;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 16px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: background 0.3s, transform 0.2s;
+      }
+      a:hover {
+        background: #0056b3;
+        transform: scale(1.05);
+      }
+      /* Keyframe Animations */
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+      @keyframes popIn {
+        0% {
+          transform: scale(0.8);
+          opacity: 0;
+        }
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-pattern">
+    <div id="message">
+      <img src="img/logo.svg" style="height: 7em; margin-bottom: 2em" />
+      <h2>404</h2>
+      <h1>Oops! Page Not Found</h1>
+      <p>
+        The page you're looking for seems to have wandered off. Double-check the
+        URL or head back to safety!
+      </p>
+      <a href="/">Go Home</a>
+    </div>
+  </body>
+</html>

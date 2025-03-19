@@ -1,0 +1,31 @@
+.four.columns.control-panel
+    .form-group
+        label(for='badgeType')
+            span.oi.oi-text(aria-hidden='true')
+            |               Badge Label
+        .input-with-color
+            input#badgeType.u-full-width(type='text' v-model='badgeText' placeholder='Enter Debug, Preview, or Sandbox')
+            input#badgeColor(type='color' v-model='badgeColor' title='Select badge color')
+    .form-group
+        label(for='labelText')
+            span.oi.oi-tag(aria-hidden='true')
+            |               Version Label (optional)
+        .input-with-color
+            input#labelText.u-full-width(type='text' v-model='versionText' placeholder='e.g. v1.2.3')
+            input#labelColor(type='color' v-model='versionColor' title='Select version color')
+    .form-group
+        .button-group
+            button.button-primary(v-show='hasImage' @click='downloadImage')
+                span.oi.oi-cloud-download(aria-hidden='true')
+                |                 Download Badge
+            button.emoji-button(v-show='hasImage' @click='resetAll' title='Reset')
+                | &#x1F504;
+    .form-group
+        select.preset-selector(@change='onPresetChange($event)')
+            option(value='' disabled='' selected='')
+                | Select a predefined type...
+            option(value='debug') Debug
+            option(value='preview') Preview
+            option(value='sandbox') Sandbox
+            option(value='beta') Beta
+            option(value='alpha') Alpha

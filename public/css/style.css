@@ -1,0 +1,466 @@
+/* Material Symbols configuration */
+.material-symbols-rounded {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+button .material-symbols-rounded {
+  vertical-align: middle;
+  margin-right: 5px;
+  font-size: 18px;
+}
+label .material-symbols-rounded {
+  vertical-align: middle;
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+
+
+/* Base styles */
+html, body {
+  height: 100%; /* Ensure the body takes the full height of the viewport */
+  margin: 0;    /* Remove default browser margins */
+}
+
+.center-body {
+  display: flex;          /* Use Flexbox layout */
+  justify-content: center; /* Center content horizontally */
+  align-items: center;    /* Center content vertically */
+  height: 100vh;          /* Set height to cover the full viewport */
+}
+
+body {
+  padding: 20px 0;
+  margin: 0;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  color: #333;
+  background-color: #fefefe;
+  position: relative;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Title and header styles */
+.app-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-title .material-symbols-rounded {
+  margin-right: 10px;
+  font-size: 32px;
+}
+
+.app-logo {
+  height: 40px;
+  margin-right: 12px;
+}
+
+/* Main card container */
+.main-card {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(0, 184, 255, 0.1);
+}
+
+/* Form styles */
+.control-panel {
+  padding-right: 15px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: 500;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.preview-panel {
+  padding-left: 15px;
+}
+
+.input-with-color {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.input-with-color input[type="text"] {
+  flex: 1;
+  margin-bottom: 0;
+  border-radius: 4px;
+  padding: 8px 12px;
+  border: 1px solid #d1d1d1;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-with-color input[type="text"]:focus {
+  border-color: #33c3f0;
+  box-shadow: 0 0 0 2px rgba(51, 195, 240, 0.2);
+  outline: none;
+}
+
+.input-with-color input[type="color"] {
+  width: 40px;
+  height: 40px;
+  padding: 2px;
+  margin-top: 12px;
+  border: 1px solid #d1d1d1;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.input-with-color input[type="color"]:hover {
+  transform: scale(1.05);
+}
+
+/* Button styles */
+button {
+  border-radius: 4px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.button-primary {
+  background-color: #33c3f0;
+  border-color: #33c3f0;
+}
+
+.button-primary:hover {
+  background-color: #1eaedb;
+  border-color: #1eaedb;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(51, 195, 240, 0.3);
+}
+
+.preset-selector {
+  width: 100%;
+  height: 38px;
+  border-radius: 4px;
+  padding: 8px 12px;
+  border: 2px solid #ff9800;
+  background-color: white;
+  color: #333;
+  font-weight: 500;
+  margin-top: 10px;
+  outline: none;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FF9800' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+  padding-right: 40px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.preset-selector:hover,
+.preset-selector:focus {
+  border-color: #ff9800;
+  box-shadow: 0 0 0 2px rgba(255, 152, 0, 0.2);
+}
+
+/* Preview panel styles */
+.preview-panel {
+  padding-left: 15px;
+}
+
+.preview-area {
+  min-height: 300px;
+  border: 2px dashed #d1d1d1;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  background-color: whitesmoke;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.preview-area:hover {
+  border-color: #33c3f0;
+  background-color: white;
+}
+
+.preview-area.drag-over {
+  border-color: #33c3f0;
+  background-color: rgba(51, 195, 240, 0.1);
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(51, 195, 240, 0.2);
+}
+
+.drop-text {
+  color: #888;
+  animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+}
+
+.drop-text p {
+  margin: 5px 0;
+}
+
+.drop-text svg {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 15px;
+  color: #33c3f0;
+}
+
+.logo-container {
+  position: relative;
+  max-width: 100%;
+  max-height: 280px;
+  animation: fadeIn 0.5s ease-in-out;
+  background-color: white;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#logoPreview {
+  max-width: 100%;
+  max-height: 280px;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+/* Ribbon styles */
+.badge-ribbon {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 36px;
+  background-color: rgba(255, 0, 0, 0.75);
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(2px);
+  animation: slideUp 0.3s ease-out;
+}
+
+.version-ribbon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 36px;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(2px);
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.ribbon-text,
+.version-text {
+  padding: 0 10px;
+  line-height: 36px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.reset-button {
+  margin-top: 15px;
+  border: 1px solid #d1d1d1;
+  transition: all 0.3s ease;
+}
+
+.reset-button:hover {
+  background-color: #f8f8f8;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hidden {
+  display: none;
+}
+
+/* Toast notification for saved settings */
+.toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 12px 20px;
+  background-color: #333;
+  color: white;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform: translateY(100px);
+  opacity: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+
+.toast.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.toast-icon {
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.logo > img {
+  height: 1.5em;
+}
+
+.emoji-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin-left: 10px;
+  vertical-align: middle;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.emoji-button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  transform: scale(1.1);
+}
+
+.button-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .row {
+    display: block;
+  }
+
+  .app-title {
+    margin-bottom: 2px;
+  }
+
+  .control-panel,
+  .preview-panel {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .six.columns {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .preview-area {
+    min-height: 8em;
+  }
+
+  body {
+    overflow-y: auto;
+    height: auto;
+    padding-bottom: 40px;
+  }
+
+  .main-card {
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch; /* For smoother scrolling on iOS */
+  }
+
+  /* Remove margin from reset button since we're relocating it */
+  .reset-button {
+    margin-top: 0;
+  }
+}

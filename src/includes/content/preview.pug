@@ -1,0 +1,13 @@
+.eight.columns.preview-panel
+    .preview-area(@dragover.prevent='onDragOver' @dragleave.prevent='onDragLeave' @drop.prevent='onFileDrop' @click='triggerFileInput' :class="{ 'drag-over': isDragging }")
+        .drop-text(v-if='!hasImage')
+            span.emoji.large-emoji &#x2B06;&#xFE0F;
+            p Drag &amp; drop your logo here
+            p or click to upload
+        .logo-container(v-if='hasImage')
+            .version-ribbon(v-show='versionText.trim().length > 0' :style='{ backgroundColor: hexToRgba(versionColor, 0.75) }')
+                .version-text {{ versionText }}
+            img#logoPreview(:src='imagePreview' alt='Logo Preview')
+            .badge-ribbon(:style='{ backgroundColor: hexToRgba(badgeColor, 0.75) }')
+                .ribbon-text {{ badgeText || &apos;Badge&apos; }}
+    input#fileInput.hidden(type='file' accept='image/*' @change='onFileSelected')
