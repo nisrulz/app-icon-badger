@@ -10,6 +10,24 @@ Generate custom badges and version labels for your app icons and logos.
 
 [![Deploy to Production](https://github.com/nisrulz/app-icon-badger/actions/workflows/firebase-hosting-merge.yml/badge.svg)](https://github.com/nisrulz/app-icon-badger/actions/workflows/firebase-hosting-merge.yml) [![Deploy to Firebase Hosting on PR](https://github.com/nisrulz/app-icon-badger/actions/workflows/firebase-hosting-pull-request.yml/badge.svg)](https://github.com/nisrulz/app-icon-badger/actions/workflows/firebase-hosting-pull-request.yml)
 
+## Introduction
+
+App Icon Badger is a simple web app designed to enhance your app icons with build type and version labels. Fully client-side and built with Vue.js, it prioritizes privacy, responsiveness, and ease of use. Whether you're a developer managing multiple app builds or simply need to add a professional touch to your icons, App Icon Badger makes the process effortless.
+
+### Features
+
+- **Client-Side Processing:** Ensures data privacy by running entirely on the client side with no network calls.
+
+- **Seamless Image Handling:** Allows downloading the same type of image as uploaded.
+
+- **Responsive Design:** Adapts effortlessly to various screen sizes for a user-friendly experience.
+
+- **Powered by Vue.js and More:** Built using Vue.js, along with HTML, CSS, and JavaScript magic.
+
+- **Simplicity and Ease of Use:** Designed to be straightforward and intuitive for all users.
+
+- **Customizable Badges:** Enables adding build type and version labels as badges to icons.
+
 ## Project Support
 
 - Before contacting me with issues, please visit the [Issue Tracker](https://github.com/nisrulz/app-icon-badger/issues) and see if issue was already added there. Just in case.
