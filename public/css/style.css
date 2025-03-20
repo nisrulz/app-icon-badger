@@ -393,6 +393,11 @@ button {
   height: 1.5em;
 }
 
+.center-text {
+  text-align: center;
+}
+
+
 .emoji-button {
   background: none;
   border: none;
