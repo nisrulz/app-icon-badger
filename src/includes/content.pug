@@ -1,13 +1,9 @@
-//- Main Title with Logo
-h1.app-title
-    span.logo
-        img(src='img/logo.svg')
-    | &nbsp;
-    span.logo
-        img(src='img/title.png')
+include top-header.pug 
 
 .row.main-card
     //- Left Panel - Controls
     include content/controls.pug
     //- Right Panel - Preview
     include content/preview.pug
+
+include bottom-bar.pug
