@@ -1,31 +1,15 @@
-/* Material Symbols configuration */
-.material-symbols-rounded {
-  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
-}
-button .material-symbols-rounded {
-  vertical-align: middle;
-  margin-right: 5px;
-  font-size: 18px;
-}
-label .material-symbols-rounded {
-  vertical-align: middle;
-  margin-right: 5px;
-  font-size: 20px;
-}
-
-
-
 /* Base styles */
-html, body {
+html,
+body {
   height: 100%; /* Ensure the body takes the full height of the viewport */
-  margin: 0;    /* Remove default browser margins */
+  margin: 0; /* Remove default browser margins */
 }
 
 .center-body {
-  display: flex;          /* Use Flexbox layout */
+  display: flex; /* Use Flexbox layout */
   justify-content: center; /* Center content horizontally */
-  align-items: center;    /* Center content vertically */
-  height: 100vh;          /* Set height to cover the full viewport */
+  align-items: center; /* Center content vertically */
+  height: 100vh; /* Set height to cover the full viewport */
 }
 
 body {
@@ -56,16 +40,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.app-title .material-symbols-rounded {
-  margin-right: 10px;
-  font-size: 32px;
-}
-
-.app-logo {
-  height: 40px;
-  margin-right: 12px;
 }
 
 /* Main card container */
@@ -341,22 +315,6 @@ button {
   transform: translateY(-50%);
 }
 
-.text-center {
-  text-align: center;
-}
-
-.reset-button {
-  margin-top: 15px;
-  border: 1px solid #d1d1d1;
-  transition: all 0.3s ease;
-}
-
-.reset-button:hover {
-  background-color: #f8f8f8;
-  transform: translateY(-2px);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
 .hidden {
   display: none;
 }
@@ -396,7 +354,6 @@ button {
 .center-text {
   text-align: center;
 }
-
 
 .emoji-button {
   background: none;
@@ -465,7 +422,4 @@ button {
   }
 
   /* Remove margin from reset button since we're relocating it */
-  .reset-button {
-    margin-top: 0;
-  }
 }
