@@ -353,6 +353,7 @@ button {
 
 .center-text {
   text-align: center;
+  margin: 0.8em;
 }
 
 .emoji-button {
@@ -412,7 +413,8 @@ button {
   body {
     overflow-y: auto;
     height: auto;
-    padding-bottom: 40px;
+    font-size: 1em;
+    padding: 0em;
   }
 
   .main-card {
@@ -421,5 +423,7 @@ button {
     -webkit-overflow-scrolling: touch; /* For smoother scrolling on iOS */
   }
 
-  /* Remove margin from reset button since we're relocating it */
+  .logo > img {
+    height: 0.8em;
+  }
 }
