@@ -1,0 +1,13 @@
+.DS_Store
+**/.DS_Store
+node_modules
+/build
+/dist
+npm-debug.log
+yarn-error.log
+
+# Go build artifacts
+/bin
+/app-icon-badger
+*.exe
+*.test

@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@tokilabs/pug3-cli": "3.0.1"
+  }
+}
