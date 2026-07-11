@@ -36,9 +36,15 @@ body {
   margin-bottom: 30px;
   font-weight: 700;
   color: #1a1a2e;
-  display: flex;
+}
+
+.app-title .title-link {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
 /* Main card container */
