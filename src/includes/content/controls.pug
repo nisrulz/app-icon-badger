@@ -1,0 +1,32 @@
+.four.columns.control-panel
+    .form-row
+        .form-group
+            label(for='badgeType')
+                span.oi.oi-text(aria-hidden='true')
+                |               Badge
+            .input-row
+                input#badgeType(type='text' v-model='badgeText' placeholder='Enter Debug, Preview, or Sandbox')
+                input#badgeColor.color-input(type='color' v-model='badgeColor' title='Select badge color')
+        .form-group
+            label(for='labelText')
+                span.oi.oi-tag(aria-hidden='true')
+                |               Version (optional)
+            .input-row
+                input#labelText(type='text' v-model='versionText' placeholder='e.g. v1.2.3')
+                input#labelColor.color-input(type='color' v-model='versionColor' title='Select text color')
+    .form-group
+        .button-group
+            button.emoji-button.download-btn(@click='downloadImage' title='Download')
+                | Download
+            button.emoji-button.reset-btn(@click='resetAll' title='Reset')
+                | Reset
+    .form-group
+        label Preset
+        .preset-chips
+            button.preset-chip(
+                v-for='(preset, key) in PRESETS'
+                :key='key'
+                :class='{ active: selectedPreset === key }'
+                :style='{ "--chip-color": preset.color }'
+                @click='selectPreset(key)'
+            ) {{ preset.text }}
