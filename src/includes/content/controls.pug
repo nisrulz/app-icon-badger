@@ -1,4 +1,14 @@
 .four.columns.control-panel
+    .form-group
+        label Preset
+        .preset-chips
+            button.btn.preset-chip(
+                v-for='(preset, key) in PRESETS'
+                :key='key'
+                :class='{ active: selectedPreset === key }'
+                :style='{ "--chip-color": preset.color }'
+                @click='selectPreset(key)'
+            ) {{ preset.text }}
     .form-row
         .form-group
             label(for='badgeType')
@@ -16,17 +26,7 @@
                 input#labelColor.color-input(type='color' v-model='versionColor' title='Select text color')
     .form-group
         .button-group
-            button.emoji-button.download-btn(@click='downloadImage' title='Download')
+            button.btn.download-btn(@click='downloadImage' :disabled='!hasImage' title='Download')
                 | Download
-            button.emoji-button.reset-btn(@click='resetAll' title='Reset')
+            button.btn.reset-btn(@click='resetAll' title='Reset')
                 | Reset
-    .form-group
-        label Preset
-        .preset-chips
-            button.preset-chip(
-                v-for='(preset, key) in PRESETS'
-                :key='key'
-                :class='{ active: selectedPreset === key }'
-                :style='{ "--chip-color": preset.color }'
-                @click='selectPreset(key)'
-            ) {{ preset.text }}

@@ -121,6 +121,7 @@ label::before {
 
 .preview-panel {
   padding-left: 15px;
+  height: 100%;
 }
 
 /* Override Skeleton input defaults */
@@ -212,23 +213,16 @@ input[type="text"]:focus {
   gap: 10px;
 }
 
-button.preset-chip {
-  all: unset;
-  padding: 2px 8px;
-  border-radius: 3px;
-  font-size: 0.85rem;
-  font-weight: 500;
+button.btn.preset-chip {
   color: #9ca3af;
   background: #f3f4f6;
-  cursor: pointer;
-  transition: all 0.2s ease;
 }
 
-button.preset-chip:hover {
+button.btn.preset-chip:hover {
   background: #e5e7eb;
 }
 
-button.preset-chip.active {
+button.btn.preset-chip.active {
   background: #fff;
   color: #6366f1;
   box-shadow: 0 0 0 2px #6366f1;
@@ -236,8 +230,9 @@ button.preset-chip.active {
 
 /* Button styles */
 button {
-  border-radius: 8px;
+  border-radius: 20px;
   font-weight: 600;
+  font-size: 0.9rem;
   transition: all 0.2s ease;
   cursor: pointer;
   border: none;
@@ -263,6 +258,7 @@ button {
 /* Preview panel styles */
 .preview-area {
   min-height: 300px;
+  height: 100%;
   border: 2px dashed #d1d5db;
   border-radius: 10px;
   padding: 10px;
@@ -459,18 +455,18 @@ button {
   margin: 0.8em;
 }
 
-button.emoji-button {
-  all: unset;
-  padding: 2px 8px;
-  border-radius: 3px;
-  font-size: 0.85rem;
-  font-weight: 500;
+button.btn {
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 0.8em;
+  font-weight: bold;
   color: #fff;
   cursor: pointer;
   transition: all 0.2s ease;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  min-height: 30px;
 }
 
 button.emoji-button:hover {
@@ -479,6 +475,12 @@ button.emoji-button:hover {
 
 button.download-btn {
   background: #0ea5e9;
+}
+
+button.download-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
 }
 
 button.reset-btn {

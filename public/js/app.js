@@ -336,7 +336,7 @@ createApp({
       badgeColor.value = DEFAULTS.badgeColor;
       versionText.value = DEFAULTS.versionText;
       versionColor.value = DEFAULTS.versionColor;
-      selectedPreset.value = "";
+      selectedPreset.value = "debug";
 
       document.getElementById("fileInput").value = "";
       saveSettings();
